@@ -46,7 +46,6 @@ const animationTimeline = () => {
         rotationY: 5,
         skewX: "-15deg"
     }
-
     // timeline
     const tl = new TimelineMax();
 
@@ -57,10 +56,6 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
     })
-    .from(".two", 0.4, {
-        opacity: 0,
-        y: 10
-    })
     .to(".one",
         0.7,
         {
@@ -68,13 +63,7 @@ const animationTimeline = () => {
             y: 10
         },
     "+=3.5")
-    .to(".two",
-        0.7,
-        {
-            opacity: 0,
-            y: 10
-        },
-    "-=1")
+
     .from(".three", 0.7, {
         opacity: 0,
         y: 10
@@ -198,12 +187,6 @@ const animationTimeline = () => {
         },
         "-=2"
     )
-    .from(".hat", 0.5, {
-        x: -100,
-        y: 350,
-        rotation: -180,
-        opacity: 0,
-    })
     .staggerFrom(
         ".wish-hbd span",
         0.7, {
